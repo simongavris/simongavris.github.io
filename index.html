@@ -6,7 +6,7 @@
     <title>Your Portfolio</title>
     <!-- Include Tailwind CSS from CDN -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
 </head>
 <body class="bg-gray-100 text-gray-900">
@@ -22,103 +22,129 @@
 </section>
 
 
-
-
-
-
 <!-- Projects Overview -->
 <section class="container mx-auto p-10">
     <h2 class="text-4xl font-bold text-center mb-8">Projects</h2>
     <div class="grid md:grid-cols-3 gap-4">
-        <!-- Project 1 -->
+        <!-- Project: Ideabox -->
         <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-            <img src="path_to_project_image" alt="Project 1 Image" class="w-full">
-            <div class="p-5">
-                <h3 class="text-2xl font-semibold">Project 1</h3>
-                <p class="mb-4">Short description of the project...</p>
-                <a href="http://link_to_live_website" class="text-blue-500 hover:underline">View Site</a>
-                <a href="http://link_to_github_repo" class="text-blue-500 hover:underline ml-4">View Code</a>
+            <img src="assets/ideabox_720px.png"Project 1 Image" class="w-full">
+            <div class="p-5 text-justify">
+                <h3 class="text-2xl font-semibold">Ideabox</h3>
+                <p class="mb-4">A quick and efficient way to <span class="font-bold text-gray-800">collect ideas</span>. The ideas are collected in a <span class="font-bold text-gray-800">MongoDB</span> and automatically sorted, deduplicated and processed.</p>
+                <a href="https://idea.bblbrx.de" class="text-blue-500 hover:underline">Visit</a>
             </div>
         </div>
-        <!-- Project 1 -->
+
+        <!-- Project: Quicknote-->
         <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-            <img src="path_to_project_image" alt="Project 1 Image" class="w-full">
-            <div class="p-5">
-                <h3 class="text-2xl font-semibold">Project 1</h3>
-                <p class="mb-4">Short description of the project...</p>
-                <a href="http://link_to_live_website" class="text-blue-500 hover:underline">View Site</a>
-                <a href="http://link_to_github_repo" class="text-blue-500 hover:underline ml-4">View Code</a>
+            <img src="assets/Quicknote_720px.png"Project 1 Image" class="w-full">
+            <div class="p-5 text-justify">
+                <h3 class="text-2xl font-semibold">Quicknote</h3>
+                <p class="mb-4">Take quick notes and share them with others. Runs 100% in your browser.</p>
+                <a href="https://quicknote.bblbrx.de" class="text-blue-500 hover:underline">Visit</a>
+                <a href="https://github.com/simongavris/quicknote" class="text-blue-500 hover:underline ml-4">Code</a>
             </div>
         </div>
-        <!-- Project 1 -->
-        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-            <img src="path_to_project_image" alt="Project 1 Image" class="w-full">
-            <div class="p-5">
-                <h3 class="text-2xl font-semibold">Project 1</h3>
-                <p class="mb-4">Short description of the project...</p>
-                <a href="http://link_to_live_website" class="text-blue-500 hover:underline">View Site</a>
-                <a href="http://link_to_github_repo" class="text-blue-500 hover:underline ml-4">View Code</a>
-            </div>
-        </div>
-        <!-- Project 1 -->
-        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-            <img src="path_to_project_image" alt="Project 1 Image" class="w-full">
-            <div class="p-5">
-                <h3 class="text-2xl font-semibold">Project 1</h3>
-                <p class="mb-4">Short description of the project...</p>
-                <a href="http://link_to_live_website" class="text-blue-500 hover:underline">View Site</a>
-                <a href="http://link_to_github_repo" class="text-blue-500 hover:underline ml-4">View Code</a>
-            </div>
-        </div>
-        <!-- Project 1 -->
-        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-            <img src="path_to_project_image" alt="Project 1 Image" class="w-full">
-            <div class="p-5">
-                <h3 class="text-2xl font-semibold">Project 1</h3>
-                <p class="mb-4">Short description of the project...</p>
-                <a href="http://link_to_live_website" class="text-blue-500 hover:underline">View Site</a>
-                <a href="http://link_to_github_repo" class="text-blue-500 hover:underline ml-4">View Code</a>
-            </div>
-        </div>
+
         <!-- Add more projects similarly -->
     </div>
 </section>
 
 <!-- Skills Overview -->
-<section class="bg-gray-100 p-10">
-    <h2 class="text-4xl font-bold text-center mb-8">Skills</h2>
-    <div class="container mx-auto">
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 text-center">
-            <!-- Skill 1 -->
-            <div class="p-5">
-                <span class="text-lg font-semibold">Skill 1</span>
+<section class="bg-gray-100 py-10">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-10">Skills</h2>
+
+        <!-- Software Skills -->
+        <div class="mb-8">
+            <div class="flex flex-wrap justify-center gap-4">
+                <!-- Java (Spring Boot) -->
+                <div class="bg-white rounded shadow p-4 text-center">
+                    <i class="fab fa-java text-blue-500 text-xl mb-2"></i>
+                    <p>Java (Spring Boot)</p>
+                </div>
+                <!-- Python -->
+                <div class="bg-white rounded shadow p-4 text-center">
+                    <i class="fab fa-python text-blue-500 text-xl mb-2"></i>
+                    <p>Python</p>
+                </div>
+                <!-- JavaScript -->
+                <div class="bg-white rounded shadow p-4 text-center">
+                    <i class="fab fa-js-square text-blue-500 text-xl mb-2"></i>
+                    <p>JavaScript</p>
+                </div>
+                <!-- TypeScript -->
+                <div class="bg-white rounded shadow p-4 text-center">
+                    <i class="fab fa-js text-blue-500 text-xl mb-2"></i>
+                    <p>TypeScript</p>
+                </div>
+                <!-- C -->
+                <div class="bg-white rounded shadow p-4 text-center">
+                    <i class="fas fa-code text-blue-500 text-xl mb-2"></i>
+                    <p>C</p>
+                </div>
             </div>
-            <!-- Add more skills similarly -->
+        </div>
+
+        <!-- Other Technologies -->
+        <div>
+            <div class="flex flex-wrap justify-center gap-4">
+                <!-- Cloud Service Provider -->
+                <div class="bg-white rounded shadow p-4 text-center">
+                    <i class="fas fa-cloud text-blue-500 text-xl mb-2"></i>
+                    <p>AWS, Azure, Hetzner</p>
+                </div>
+                <!-- Project Management -->
+                <div class="bg-white rounded shadow p-4 text-center">
+                    <i class="fas fa-tasks text-blue-500 text-xl mb-2"></i>
+                    <p>Jira, Trello, Basecamp, Asana</p>
+                </div>
+                <!-- Monitoring -->
+                <div class="bg-white rounded shadow p-4 text-center">
+                    <i class="fas fa-heartbeat text-blue-500 text-xl mb-2"></i>
+                    <p>Prometheus, Grafana, Nagios</p>
+                </div>
+                <!-- Automation -->
+                <div class="bg-white rounded shadow p-4 text-center">
+                    <i class="fas fa-robot text-blue-500 text-xl mb-2"></i>
+                    <p>Jenkins, GitlabCI</p>
+                </div>
+                <!-- Infrastructure as Code -->
+                <div class="bg-white rounded shadow p-4 text-center">
+                    <i class="fas fa-code-branch text-blue-500 text-xl mb-2"></i>
+                    <p>Terraform, Ansible, Bicep</p>
+                </div>
+                <!-- Containerization -->
+                <div class="bg-white rounded shadow p-4 text-center">
+                    <i class="fas fa-box text-blue-500 text-xl mb-2"></i>
+                    <p>Docker, Kubernetes, Vagrant</p>
+                </div>
+                <!-- Linux & Linux Development -->
+                <div class="bg-white rounded shadow p-4 text-center">
+                    <i class="fab fa-linux text-blue-500 text-xl mb-2"></i>
+                    <p>Ubuntu Server Provisioning & Development</p>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
-<!-- About Me Section -->
-<section class="container mx-auto p-10 text-center">
-    <h2 class="text-4xl font-bold mb-4">About Me</h2>
-    <p class="text-xl mb-4">A brief introduction about yourself, your interests, and your professional background.</p>
-    <a href="mailto:your_email@example.com" class="inline-block bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-700">Contact Me</a>
-</section>
 
 <!-- Footer Section -->
 <footer class="bg-gray-800 text-white p-6">
     <div class="container mx-auto text-center">
         <div class="flex justify-center space-x-4">
             <!-- Email Icon Link -->
-            <a href="mailto:your_email@example.com" class="hover:text-blue-300">
+            <a href="mailto:simon.gavis@gmail.com" class="hover:text-blue-300">
                 <i class="fas fa-envelope fa-lg"></i>
             </a>
             <!-- GitHub Icon Link -->
-            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" class="hover:text-blue-300">
+            <a href="https://github.com/simongavris" target="_blank" rel="noopener noreferrer" class="hover:text-blue-300">
                 <i class="fab fa-github fa-lg"></i>
             </a>
             <!-- LinkedIn Icon Link -->
-            <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" class="hover:text-blue-300">
+            <a href="https://www.linkedin.com/in/simon-gavris/" target="_blank" rel="noopener noreferrer" class="hover:text-blue-300">
                 <i class="fab fa-linkedin fa-lg"></i>
             </a>
         </div>
