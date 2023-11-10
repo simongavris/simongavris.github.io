@@ -41,8 +41,8 @@
             <img src="assets/Quicknote_720px.png"Project 1 Image" class="w-full">
             <div class="p-5 text-justify">
                 <h3 class="text-2xl font-semibold">Quicknote</h3>
-                <p class="mb-4">Take quick notes and share them with others. Runs 100% in your browser.</p>
-                <a href="https://quicknote.bblbrx.de" class="text-blue-500 hover:underline">Visit</a>
+                <p class="mb-4">Take quick notes and share them with others. Runs 100% in your browser. Create multiple notes with url paths. Stored in browser cache. Runs offline.</p>
+                <a href="https://quicknote.bblbrx.de" class="text-blue-500 hover:underline">Try!</a>
                 <a href="https://github.com/simongavris/quicknote" class="text-blue-500 hover:underline ml-4">Code</a>
             </div>
         </div>
@@ -130,6 +130,31 @@
     </div>
 </section>
 
+<section class="bg-gray-100 py-10">
+    <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold text-gray-800 mb-6">Contact Me</h2>
+        <p class="text-lg text-gray-600 mb-8">Feel free to get in touch!</p>
+        <a href="javascript:;" onclick="copyEmailToClipboard()" class="text-lg text-blue-600 hover:text-blue-800 font-semibold">
+            <i class="fas fa-envelope-open-text fa-fw"></i> Copy my email to clipboard
+        </a>
+        <p id="email-feedback" class="text-sm text-gray-500 mt-2"></p>
+    </div>
+</section>
+
+<script>
+    function copyEmailToClipboard() {
+        const email = 'simon.gavris@gmail.com';  // Replace with your actual email address
+        navigator.clipboard.writeText(email).then(() => {
+            // This will show a message that fades out after the copy
+            const feedback = document.getElementById('email-feedback');
+            feedback.textContent = 'Email address copied to clipboard!';
+            feedback.style.opacity = '1';
+            setTimeout(() => feedback.style.opacity = '0', 2500);
+        }).catch(err => {
+            console.error('Could not copy text: ', err);
+        });
+    }
+    </script>
 
 <!-- Footer Section -->
 <footer class="bg-gray-800 text-white p-6">
